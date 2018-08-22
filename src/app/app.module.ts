@@ -2,10 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
+import { MainComponent } from './main/main.component';
+import { HomeComponent } from './main/sub-main/home/home.component';
+import { AboutComponent } from './main/sub-main/about/about.component';
+import { PortfolioComponent } from './main/sub-main/portfolio/portfolio.component';
+import { ContactComponent } from './main/sub-main/contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    MainComponent,
+    HomeComponent,
+    AboutComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
