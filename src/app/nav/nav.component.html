@@ -1,3 +1,22 @@
-<p>
-  nav works!
-</p>
+<div class="navbar">
+  <div class="navbar__info">
+    <div class="navbar__info__image">
+      <img class="navbar__info__image-img" src="assets/img/my_photo.png" alt="Profile Picture" />
+    </div>
+    <div class="navbar__info__name">
+      <h1 class="navbar__info__name-h1"> Masoud Moeini </h1>
+    </div>
+    <div class="navbar__info__title">
+      <h2 class="navbar__info__title-h2"> Front End Developer </h2>
+    </div>
+  </div>
+  <div class="navbar__menu">
+    <ul class="navbar__menu__list">
+      <li class="navbar__menu__list__item" (click)="setPage('home')">Home</li>
+      <li class="navbar__menu__list__item" (click)="setPage('about')">About</li>
+      <li class="navbar__menu__list__item" (click)="setPage('portfolio')">Portfolio</li>
+      <li class="navbar__menu__list__item" (click)="setPage('contact')">Contact</li>
+    </ul>
+  </div>
+  <div class="navbar__socialicons">c</div>
+</div>
