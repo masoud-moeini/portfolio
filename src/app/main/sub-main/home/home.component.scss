@@ -1,0 +1,25 @@
+.home{
+    padding-left: 1.5rem;
+     background-color: var(--light-grey-color);
+    height: 100vh;
+  &__background{
+    width: calc(100vw - var(--navbar-size));
+    height: 100vh;
+    background:url("/assets/img/photo-desktop-1600.jpg") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+  &__content{
+    color: var(--light-grey-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
