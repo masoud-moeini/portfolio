@@ -10,17 +10,48 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 9rem 10rem 0 10rem ;
+    padding: 9rem 6rem 0 6rem ;
+
 
 
     &__getInTouch{
       flex: 0 1 50%;
+      padding: 0 3rem 0 0;
+
+
       &__title{
         font-family: 'Work Sans';
         text-shadow: 1px 1px 2x var(--dark-grey-color-2);
         border-bottom: 2.5px solid var(--primary-color);
         display: inline;
+        margin: 2rem 0 0 0;
 
+      }
+      &__description{
+        margin: 2rem 0 0 0;
+        font-size: 1.5rem;
+        color: var(--dark-grey-color-2);
+        text-align:justify;
+      }
+
+      &__contactDetails{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 0 0;
+
+        &__row{
+          display: flex;
+          align-items: center;
+          &__icon{
+            width: 4.7rem;
+            height: 4.7rem;
+            padding: 1rem 1.4rem 1rem 1rem;
+          }
+          &__text{
+            font-size: 1.6rem;
+
+          }
+        }
       }
     }
 
@@ -29,6 +60,7 @@
       flex: 0 1 50%;
 
       &__title{
+
         font-family: 'Work Sans';
         text-shadow: 1px 1px 2x var(--dark-grey-color-2);
         border-bottom: 2.5px solid var(--primary-color);
