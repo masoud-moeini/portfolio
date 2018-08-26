@@ -1,15 +1,112 @@
 .contact {
   border-left: 1.5rem solid var(--light-grey-color);
 
-  padding: 7rem 0 0 0;
+  padding: var(--content-top-padding-size) 0 0 0;
 
 
   &__content{
     width: calc(100vw - var(--navbar-size));
-
+    min-height : calc(100vh - var(--content-top-padding-size));
     display: flex;
-    justify-content: space-evenly;
-    padding: 5rem 0 0 0 ;
+    justify-content: space-between;
+
+    padding: 9rem 10rem 0 10rem ;
+
+
+    &__getInTouch{
+      flex: 0 1 50%;
+      &__title{
+        font-family: 'Work Sans';
+        text-shadow: 1px 1px 2x var(--dark-grey-color-2);
+        border-bottom: 2.5px solid var(--primary-color);
+        display: inline;
+
+      }
+    }
+
+    &__contactForm{
+
+      flex: 0 1 50%;
+
+      &__title{
+        font-family: 'Work Sans';
+        text-shadow: 1px 1px 2x var(--dark-grey-color-2);
+        border-bottom: 2.5px solid var(--primary-color);
+        display: inline;
+      }
+
+      &__form{
+        margin: 2rem 0 0 0.5rem;
+
+        & > * {
+          margin-bottom: 1.5rem;
+
+        }
+
+        &__name{
+          &__field{
+            height: 3.5rem;
+            width: 100%;
+            border : 1px solid var(--light-grey-color);
+            padding: 0 0 0 1.2rem;
+            &::placeholder{
+              color: var(--light-grey-color-2);
+              font-size: 1.4rem;
+              font-family: Roboto;
+            }
+          }
+
+        }
+        &__email{
+          &__field{
+            height: 3.5rem;
+            width: 100%;
+            border : 1px solid var(--light-grey-color);
+            padding: 0 0 0 1.2rem;
+            &::placeholder{
+              color: var(--light-grey-color-2);
+              font-size: 1.4rem;
+              font-family: Roboto;
+            }
+          }
+        }
+        &__message{
+          &__field{
+            height: 12rem;
+            width: 100%;
+            border : 1px solid var(--light-grey-color);
+            padding: 1.2rem 0 0 1.2rem;
+            &::placeholder{
+              color: var(--light-grey-color-2);
+              font-size: 1.4rem;
+              font-family: Roboto;
+            }
+          }
+        }
+
+        &__captcha{
+          height: 7rem;
+        }
+
+        &__submit{
+
+          &__field{
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            border: 2px solid var(--primary-color);
+            background-color: var(--white-color);
+            transition: all 0.2s;
+            &:hover{
+              color: var(--white-color);
+              background-color: var(--primary-color);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+
+
+    }
   }
   &__label{
 
@@ -47,7 +144,6 @@
       line-height: 4.5rem;
       padding: 0 1rem 0 0;
       text-align: right;
-      font-size: 2.1rem;
       color: var(--white-color);
       font-family: 'Work Sans';
       text-shadow: 2px 2px 3px var(--dark-grey-color-2);

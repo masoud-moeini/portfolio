@@ -10,6 +10,7 @@
   --primary-color:#2fc0d1;
   --primary-color-dark: #2999a8;
   --navbar-size : 35rem;
+  --content-top-padding-size : 7rem;
 }
 
 * {
@@ -37,6 +38,10 @@ body {
 }
 
 h3{
-  font-size: 1.5rem;
+  font-size: 2.1rem;
+}
 
+h4{
+  font-size: 1.7rem;
+  font-weight: 300;
 }

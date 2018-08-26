@@ -9,6 +9,8 @@ import { AboutComponent } from './main/sub-main/about/about.component';
 import { PortfolioComponent } from './main/sub-main/portfolio/portfolio.component';
 import { ContactComponent } from './main/sub-main/contact/contact.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {RecaptchaModule} from "angular-google-recaptcha";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,10 +21,16 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     AboutComponent,
     PortfolioComponent,
     ContactComponent
+
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
+    RecaptchaModule.forRoot({
+      siteKey: '6LebdmwUAAAAABcIWBjTmsjEhRkm6TiWhIawpBU-',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

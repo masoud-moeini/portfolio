@@ -11,10 +11,30 @@
 
 
   <div class="contact__content__getInTouch">
-    hihi
+    <h4 class="contact__content__getInTouch__title">Get in Touch</h4>
   </div>
   <div class="contact__content__contactForm">
-    hihi
+    <h4 class="contact__content__contactForm__title">Contact Form</h4>
+    <form class="contact__content__contactForm__form" action="" method="post">
+      <div class="contact__content__contactForm__form__name">
+        <input type="text" class="contact__content__contactForm__form__name__field" placeholder="Full Name">
+      </div>
+
+      <div class="contact__content__contactForm__form__email">
+        <input type="text" class="contact__content__contactForm__form__email__field" placeholder="Email Address">
+      </div>
+      <div class="contact__content__contactForm__form__message">
+        <textarea class="contact__content__contactForm__form__message__field" placeholder="Message" ></textarea>
+      </div>
+      <div class="contact__content__contactForm__form__captcha">
+
+        <recaptcha [formControl]="myRecaptcha" (scriptLoad)="onScriptLoad()" (scriptError)="onScriptError()"></recaptcha>
+    </div>
+      <div class="contact__content__contactForm__form__submit">
+        <input type="submit" value="Send message" class="contact__content__contactForm__form__submit__field" />
+      </div>
+
+    </form>
   </div>
 
   </div>
