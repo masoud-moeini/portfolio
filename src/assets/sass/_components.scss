@@ -1,0 +1,44 @@
+
+.label{
+
+  margin: 0 0 0 -1rem;
+  position: relative;
+
+
+
+
+
+  &-fold{
+    background-color: var(--primary-color-dark);
+    width: 1rem;
+    height: 4.5rem;
+    position: absolute;
+    transform-origin: top left;
+    -ms-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+
+
+
+  }
+
+  &-rect{
+    background-color: var(--primary-color);
+    width: 16rem;
+    height: 4.5rem;
+    position: absolute;
+    color: var(--light-grey-color);
+
+  }
+
+  &-title{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 1rem 0 0;
+    text-align: right;
+    color: var(--white-color);
+    font-family: 'Work Sans';
+    text-shadow: 2px 2px 3px var(--dark-grey-color-2);
+  }
+
+}
