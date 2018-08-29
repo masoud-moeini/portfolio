@@ -1,0 +1,24 @@
+.portfolio{
+  border-left: 1.5rem solid var(--light-grey-color);
+  padding: var(--content-top-padding-size) 0 0 0;
+
+  &__content{
+    width: calc(100vw - var(--navbar-size));
+    min-height : calc(100vh - var(--content-top-padding-size));
+    padding: 9rem 6rem 0 6rem ;
+
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      &__item{
+        padding: 1rem;
+
+        &-img{
+
+        }
+      }
+    }
+  }
+}

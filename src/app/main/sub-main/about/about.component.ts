@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import {fadeAnimation} from "../../../animations";
 
 @Component({
   selector: 'app-about',

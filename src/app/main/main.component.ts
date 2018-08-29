@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PageService} from "../page.service";
 import { trigger,style,transition,animate,state } from '@angular/animations';
+import {fadeAnimation} from "../animations";
 
 
 
@@ -8,6 +9,9 @@ import { trigger,style,transition,animate,state } from '@angular/animations';
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
+  animations:[
+    fadeAnimation
+  ]
 
 })
 export class MainComponent implements OnInit {
