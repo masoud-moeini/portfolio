@@ -17,10 +17,6 @@ import {fadeAnimation} from "../animations";
 export class MainComponent implements OnInit {
   private page_switch:string;
 
-  // todo for animations : https://stackoverflow.com/questions/42016130/is-it-possible-to-animate-angular-2s-ng-switch
-  // todo for animations : Mosh tutorial
-  // todo or with css animate ?
-
   constructor(private pageService:PageService) {
     this.pageService.DataPassMethod$.subscribe((data) => {
         this.page_switch = data;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +12,21 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    $(document).ready(function () {
+      $(".contact__content__contactForm__form__inputText__field").blur( function() {
+        var tmp = $(this).val();
+        if(tmp == '') {
+          $(this).next("label").removeClass("visuallyHidden");
+          console.log("has not value")
+        } else {
+
+          $(this).next("label").addClass("visuallyHidden");
+          console.log("has value")
+        }
+      });
+
+    })
   }
 
 

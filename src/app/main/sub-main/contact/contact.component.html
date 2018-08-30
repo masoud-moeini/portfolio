@@ -35,20 +35,39 @@
     </div>
   </div>
   <div class="contact__content__contactForm">
+
     <h4 class="contact__content__contactForm__title">Contact Form</h4>
     <form class="contact__content__contactForm__form" action="" method="post">
-      <div class="contact__content__contactForm__form__name">
-        <input type="text" class="contact__content__contactForm__form__name__field" placeholder="Full Name">
+
+      <div class="contact__content__contactForm__form__inputText">
+        <input required min="3" max="30" type="text" class="contact__content__contactForm__form__inputText__field" id="input-fullname">
+        <label class="contact__content__contactForm__form__inputText__label" for="input-fullname">
+          <span class="contact__content__contactForm__form__inputText__label-content" data-content="Full Name">
+
+          </span>
+        </label>
       </div>
 
-      <div class="contact__content__contactForm__form__email">
-        <input type="text" class="contact__content__contactForm__form__email__field" placeholder="Email Address">
+      <div class="contact__content__contactForm__form__inputText">
+        <input required min="6" max="30" type="email" class="contact__content__contactForm__form__inputText__field" id="input-email">
+        <label class="contact__content__contactForm__form__inputText__label" for="input-email">
+          <span class="contact__content__contactForm__form__inputText__label-content" data-content="Email Address">
+
+          </span>
+        </label>
       </div>
-      <div class="contact__content__contactForm__form__message">
-        <textarea class="contact__content__contactForm__form__message__field" placeholder="Message" ></textarea>
+
+      <div class="contact__content__contactForm__form__inputText height-util" >
+        <textarea required class="contact__content__contactForm__form__inputText__field height-util" id="input-message" ></textarea>
+        <label class="contact__content__contactForm__form__inputText__label" for="input-message">
+          <span class="contact__content__contactForm__form__inputText__label-content" data-content="Message">
+
+          </span>
+        </label>
       </div>
+
+
       <div class="contact__content__contactForm__form__captcha">
-
         <recaptcha [formControl]="myRecaptcha" (scriptLoad)="onScriptLoad()" (scriptError)="onScriptError()"></recaptcha>
     </div>
       <div class="contact__content__contactForm__form__submit">
