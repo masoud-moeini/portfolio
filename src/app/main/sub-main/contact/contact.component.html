@@ -40,30 +40,37 @@
     <form class="contact__content__contactForm__form" action="" method="post">
 
       <div class="contact__content__contactForm__form__inputText">
-        <input required min="3" max="30" type="text" class="contact__content__contactForm__form__inputText__field" id="input-fullname">
+        <span class="contact__content__contactForm__form__inputText__alert" *ngIf="!name.valid && name.touched">Name is required</span>
+        <input ngModel name="name" #name="ngModel"  required min="3" max="30" type="text" class="contact__content__contactForm__form__inputText__field" id="input-fullname">
         <label class="contact__content__contactForm__form__inputText__label" for="input-fullname">
           <span class="contact__content__contactForm__form__inputText__label-content" data-content="Full Name">
 
           </span>
         </label>
+        <img src="/assets/icon/user.svg" alt="name icon" class="contact__content__contactForm__form__inputText__icon">
+
       </div>
 
       <div class="contact__content__contactForm__form__inputText">
-        <input required min="6" max="30" type="email" class="contact__content__contactForm__form__inputText__field" id="input-email">
+        <span class="contact__content__contactForm__form__inputText__alert" *ngIf="!email.valid && email.touched">Email is required</span>
+        <input ngModel name="email" #email="ngModel" required type="email" class="contact__content__contactForm__form__inputText__field" id="input-email">
         <label class="contact__content__contactForm__form__inputText__label" for="input-email">
           <span class="contact__content__contactForm__form__inputText__label-content" data-content="Email Address">
 
           </span>
         </label>
+        <img src="/assets/icon/mail.svg" alt="mail icon" class="contact__content__contactForm__form__inputText__icon">
       </div>
 
       <div class="contact__content__contactForm__form__inputText height-util" >
-        <textarea required class="contact__content__contactForm__form__inputText__field height-util" id="input-message" ></textarea>
+        <span class="contact__content__contactForm__form__inputText__alert" *ngIf="!message.valid && message.touched">Message is required</span>
+        <textarea ngModel name="message" #message="ngModel"  required class="contact__content__contactForm__form__inputText__field height-util" id="input-message" ></textarea>
         <label class="contact__content__contactForm__form__inputText__label" for="input-message">
           <span class="contact__content__contactForm__form__inputText__label-content" data-content="Message">
 
           </span>
         </label>
+        <img src="/assets/icon/pencil.svg" alt="message icon" class="contact__content__contactForm__form__inputText__icon">
       </div>
 
 

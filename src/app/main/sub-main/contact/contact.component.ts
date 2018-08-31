@@ -27,9 +27,14 @@ export class ContactComponent implements OnInit {
       });
 
     })
+
+
   }
 
 
+  log(x){
+    console.log(x)
+  }
 
   onScriptLoad() {
     console.log('Google reCAPTCHA loaded and is ready for use!')
