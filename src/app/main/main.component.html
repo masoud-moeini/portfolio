@@ -1,4 +1,4 @@
-<div @fade [ngSwitch]="page_switch" class="main">
+<div [ngSwitch]="page_switch" class="main">
   <div class="" *ngSwitchCase="'about'"><app-about @fade></app-about></div>
   <div class="" *ngSwitchCase="'contact'"><app-contact @fade></app-contact></div>
   <div class="" *ngSwitchCase="'home'"><app-home @fade></app-home></div>
