@@ -54,6 +54,8 @@
               font-size: 1.5rem;
               &-img{
                 margin-right: 1.5rem;
+                width: 4.5rem;
+                height: 4.5rem;
               }
               &::after{
                 content: '';
@@ -73,11 +75,26 @@
             }
             &__subSkills{
               list-style: none;
+              &__subSkill{
+                &__title{
+                  display: flex;
+                  align-items: center;
+                  padding: 0.3rem 2rem;
+
+                  font-size: 1.3rem;
+                  &-img{
+                    margin-right: 1.5rem;
+                    width: 3rem;
+                    height: 3rem;
+                  }
+                }
+              }
             }
 
             &.active > span{
               color: #777777;
               background-color: #e6e6e6;
+              padding: 0.3rem 0.3rem;
             }
             &.active > span::after{
               transform: rotateX(180deg);
