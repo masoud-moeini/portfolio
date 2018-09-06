@@ -15,7 +15,7 @@ import {fadeAnimation} from "../animations";
 
 })
 export class MainComponent implements OnInit {
-  private page_switch:string;
+  page_switch:string;
 
   constructor(private pageService:PageService) {
     this.pageService.DataPassMethod$.subscribe((data) => {
