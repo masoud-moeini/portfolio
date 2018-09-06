@@ -8,9 +8,9 @@ import { HomeComponent } from './main/sub-main/home/home.component';
 import { AboutComponent } from './main/sub-main/about/about.component';
 import { PortfolioComponent } from './main/sub-main/portfolio/portfolio.component';
 import { ContactComponent } from './main/sub-main/contact/contact.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {RecaptchaModule} from "angular-google-recaptcha";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RecaptchaModule} from 'angular-google-recaptcha';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [

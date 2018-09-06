@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PageService} from "../page.service";
+import {PageService} from '../page.service';
 
 
 @Component({
@@ -10,7 +10,7 @@ import {PageService} from "../page.service";
 export class NavComponent implements OnInit {
 
 
-  private page: string = "home";
+  private page = 'home';
 
   constructor(private pageService: PageService) {
 
@@ -21,7 +21,7 @@ export class NavComponent implements OnInit {
 
   }
 
-  setPage(value){
+  setPage(value) {
 
     this.pageService.DataPassMethod(value);
 

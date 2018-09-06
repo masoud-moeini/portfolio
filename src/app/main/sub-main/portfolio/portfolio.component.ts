@@ -14,10 +14,10 @@ export class PortfolioComponent implements OnInit {
 
     $(document).ready(function () {
         $('.portfolio__content__items__item-container').hover(function () {
-            $(this).children('.portfolio__content__items__item-container-button').animate({opacity:'1'});
-        },function () {
-          $(this).children('.portfolio__content__items__item-container-button').animate({opacity:'0'});
-        })
-    })
+            $(this).children('.portfolio__content__items__item-container-button').animate({opacity: '1'});
+        }, function () {
+          $(this).children('.portfolio__content__items__item-container-button').animate({opacity: '0'});
+        });
+    });
   }
 }

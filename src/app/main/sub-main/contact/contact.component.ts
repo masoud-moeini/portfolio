@@ -14,34 +14,34 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
 
     $(document).ready(function () {
-      $(".contact__content__contactForm__form__inputText__field").blur( function() {
-        var tmp = $(this).val();
-        if(tmp == '') {
-          $(this).next("label").removeClass("visuallyHidden");
-          console.log("has not value")
+      $('.contact__content__contactForm__form__inputText__field').blur( function() {
+        const tmp = $(this).val();
+        if (tmp === '') {
+          $(this).next('label').removeClass('visuallyHidden');
+          console.log('has not value');
         } else {
 
-          $(this).next("label").addClass("visuallyHidden");
-          console.log("has value")
+          $(this).next('label').addClass('visuallyHidden');
+          console.log('has value');
         }
       });
 
-    })
+    });
 
 
   }
 
 
-  log(x){
-    console.log(x)
+  log(x) {
+    console.log(x);
   }
 
   onScriptLoad() {
-    console.log('Google reCAPTCHA loaded and is ready for use!')
+    console.log('Google reCAPTCHA loaded and is ready for use!');
   }
 
   onScriptError() {
-    console.log('Something went long when loading the Google reCAPTCHA')
+    console.log('Something went long when loading the Google reCAPTCHA');
   }
 
 }

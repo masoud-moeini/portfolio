@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Observable, Subject} from "rxjs/index";
+import {Observable, Subject} from 'rxjs/index';
 
 @Injectable({
   providedIn: 'root'
