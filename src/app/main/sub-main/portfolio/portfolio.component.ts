@@ -13,7 +13,6 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
 
     $(document).ready(function () {
-
         $('.portfolio__content__items__item-container').hover(function () {
             $(this).children('.portfolio__content__items__item-container-button').animate({opacity:'1'});
         },function () {
@@ -21,5 +20,4 @@ export class PortfolioComponent implements OnInit {
         })
     })
   }
-
 }

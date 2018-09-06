@@ -15,7 +15,6 @@ export class PageService {
 
   DataPassMethod(data) {
     console.log(data);
-
     this.myMethodSubject.next(data);
   }
 }

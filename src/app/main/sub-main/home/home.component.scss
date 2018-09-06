@@ -40,31 +40,22 @@
       flex-direction: column;
       margin: 0 auto;
 
-
       &__row{
-
         font-size: 1.6rem;
         margin: 0 0 1.3rem 0;
         font-family: 'Work Sans';
 
         &-title{
-
           border-bottom: 2px solid var(--primary-color);
           padding: .2rem 0 .2rem 0;
           margin-right: 2rem;
-
         }
 
         &-value{
-
           padding: .2rem 0 .2rem 0;
-
         }
-
       }
-
     }
   }
-
 }
 
