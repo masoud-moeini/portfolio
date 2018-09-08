@@ -4,3 +4,16 @@
 .visuallyHidden{
   display: none !important;
 }
+
+.drawerEffect{
+  @include respond(phone) {
+    transform: translateX(0%) !important;
+  }
+}
+.opacityEffect{
+  @include respond(phone) {
+    opacity: 0.7 !important;
+  }
+}
+
+

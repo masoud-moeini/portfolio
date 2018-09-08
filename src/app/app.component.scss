@@ -1,11 +1,74 @@
+@import "../assets/sass/_mixins";
+
 .app{
   display: flex;
+  position: relative;
+
+  @include respond(phone) {
+
+    display: block;
+
+  }
 
   &__nav{
     flex: 0 1 var(--navbar-size);
+    transition: all 0.3s;
+
+    @include respond(phone) {
+
+      transform: translateX(-100%);
+      width: var(--navbar-size);
+      display: block;
+      position: absolute;
+      top: 0;
+      left:0;
+      background-color: var(--white-color);
+      height: 100%;
+      z-index: 50;
+      border-right: 1px solid var(--light-grey-color);
+
+    }
+
   }
 
   &__main{
-    flex: 0 1 auto;
+
+    flex: 0 1 100%;
+
+    @include respond(phone) {
+      width: 100%;
+      display: block;
+
+    }
+
+
+
   }
+}
+
+.drawerButton{
+
+  display: none;
+
+  @include respond(phone) {
+    display: block !important;
+    top: 0;
+    left:0;
+    height: 6rem;
+    width: 100%;
+    border-bottom: 1px solid var(--light-grey-color);
+    padding-left: 2rem;
+    position: relative;
+  }
+
+
+  &-img{
+    width: 3rem;
+    height: 3rem;
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+  }
+
 }

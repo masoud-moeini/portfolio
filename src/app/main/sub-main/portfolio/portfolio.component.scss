@@ -1,11 +1,25 @@
+@import "src/assets/sass/_mixins.scss";
+
 .portfolio{
   border-left: 1.5rem solid var(--light-grey-color);
   padding: var(--content-top-padding-size) 0 0 0;
+
+  @include respond(phone) {
+    border: none;
+    padding: var(--content-top-padding-size-phone) 0 0 0;
+  }
 
   &__content{
     width: calc(100vw - var(--navbar-size));
     min-height : calc(100vh - var(--content-top-padding-size));
     padding: 9rem 6rem 0 6rem ;
+
+    @include respond(phone) {
+      width: 100%;
+      flex-direction: column;
+      min-height:50rem;
+      padding: 6.5rem 3rem 0 3rem ;
+    }
 
     &__items{
       display: flex;
@@ -16,6 +30,12 @@
         position: relative;
         width: 25rem;
         height: 25rem;
+
+        @include respond(phone) {
+          width: 100%;
+          height: auto;
+          margin-bottom: 3rem;
+        }
 
         &-container{
           position: relative;

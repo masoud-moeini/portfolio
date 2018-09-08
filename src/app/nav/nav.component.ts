@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PageService} from '../page.service';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit() {
+
 
   }
 

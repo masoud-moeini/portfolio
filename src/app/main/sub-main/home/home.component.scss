@@ -1,19 +1,28 @@
+@import "src/assets/sass/_mixins.scss";
 .home{
 
     border-left: 1.5rem solid var(--light-grey-color);
 
+    @include respond(phone) {
+      border: none;
+    }
+
+
   &__background{
-    width: calc(100vw - var(--navbar-size));
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background:url("/assets/img/photo-desktop-1600.jpg") fixed;
     background-color: rgb(179, 179, 179);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
+
+
   }
 
   &__content{
+
 
     color: var(--light-grey-color);
     height: 100vh;

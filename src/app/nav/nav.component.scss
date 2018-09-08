@@ -1,15 +1,24 @@
+@import "src/assets/sass/_mixins.scss";
 .navbar{
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  padding-top: 2rem;
+
+
+
+
 
 
   &__info{
-    padding-top: 5rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto 2.6rem auto;
+
+
+
 
     &__image{
       padding-bottom: 1rem;
@@ -19,6 +28,8 @@
         height: 14rem;
         border: 4px solid var(--light-grey-color);
         border-radius: 100%;
+
+
       }
     }
 
@@ -50,6 +61,8 @@
   &__menu{
     font-size: 1.5rem;
 
+
+
     &__list{
       display: flex;
       flex-direction: column;
@@ -59,8 +72,11 @@
       font-weight: 500;
 
 
+
+
       &:last-child{
         border-bottom: 1px solid var(--light-grey-color);
+
       }
 
       &__item{
@@ -73,6 +89,8 @@
         padding: 0.85rem 0;
         cursor: pointer;
         position: relative;
+
+
 
         &__link:link,&__link:visited {
           color: var(--dark-grey-color-2);
@@ -105,12 +123,7 @@
     }
   }
 
-  &__socialicons{
 
-    margin: 0 auto;
-    display: flex;
-
-  }
 
 
 }
