@@ -4,6 +4,11 @@
   padding: var(--content-top-padding-size) 0 0 0;
   width:100%;
 
+  @include respond(tab-land) {
+    min-height: 100vh;
+    padding: var(--content-top-padding-size-tabland) 0 0 0;
+
+  }
 
   @include respond(tab-port) {
     border:none;
@@ -25,10 +30,17 @@
     padding: 9rem 6rem 0 6rem ;
     flex-wrap: wrap;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       flex-direction: column;
       width: 100%;
       min-height:50rem;
+      padding: 5rem 4rem 0 4rem ;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      width: 100%;
+      min-height: 50rem;
       padding: 7rem 6rem 0 6rem ;
     }
 
@@ -46,6 +58,9 @@
     &__description{
       flex: 0 1 50%;
 
+      @include respond(tab-land) {
+        margin-bottom: 4rem;
+      }
       @include respond(tab-port) {
         margin-bottom: 3rem;
       }
@@ -149,10 +164,6 @@
           }
         }
       }
-
-
     }
-
   }
-
 }
