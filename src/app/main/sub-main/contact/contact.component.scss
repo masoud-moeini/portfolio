@@ -4,6 +4,11 @@
   border-left: 1.5rem solid var(--light-grey-color);
   padding: var(--content-top-padding-size) 0 0 0;
 
+  @include respond(tab-port) {
+    border: none;
+    padding: var(--content-top-padding-size-phone) 0 0 0;
+  }
+
   @include respond(phone) {
     border: none;
     padding: var(--content-top-padding-size-phone) 0 0 0;
@@ -17,6 +22,14 @@
 
     padding: 9rem 6rem 0 6rem ;
 
+
+    @include respond(tab-port) {
+      padding: 7rem 5rem 0 5rem ;
+      flex-direction: column;
+      width: 100%;
+      min-height: 100rem;
+    }
+
     @include respond(phone) {
       padding: 6.5rem 3rem 0 3rem ;
       flex-direction: column;
@@ -29,6 +42,11 @@
     &__getInTouch{
       flex: 0 1 50%;
       padding: 0 3rem 0 0;
+
+
+      @include respond(tab-port) {
+        margin-bottom: 3rem;
+      }
 
       @include respond(phone) {
         margin-bottom: 2rem;
@@ -214,6 +232,10 @@
         }
 
         &__submit{
+
+          @include respond(tab-port) {
+            margin-top: 6rem;
+          }
 
           @include respond(phone) {
             margin-top: 6rem;

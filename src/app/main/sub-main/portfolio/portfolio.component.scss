@@ -4,6 +4,12 @@
   border-left: 1.5rem solid var(--light-grey-color);
   padding: var(--content-top-padding-size) 0 0 0;
 
+
+  @include respond(tab-port) {
+    border: none;
+    padding: var(--content-top-padding-size-phone) 0 0 0;
+  }
+
   @include respond(phone) {
     border: none;
     padding: var(--content-top-padding-size-phone) 0 0 0;
@@ -13,6 +19,13 @@
     width: calc(100vw - var(--navbar-size));
     min-height : calc(100vh - var(--content-top-padding-size));
     padding: 9rem 6rem 0 6rem ;
+
+    @include respond(tab-port) {
+      width: 100%;
+      flex-direction: column;
+      min-height:50rem;
+      padding: 7rem 5rem 0 5rem ;
+    }
 
     @include respond(phone) {
       width: 100%;
@@ -30,6 +43,12 @@
         position: relative;
         width: 25rem;
         height: 25rem;
+
+        @include respond(tab-port) {
+          width: 50%;
+          height: auto;
+          margin-bottom: 3rem;
+        }
 
         @include respond(phone) {
           width: 100%;
