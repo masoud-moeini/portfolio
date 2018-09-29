@@ -3,7 +3,7 @@
 .portfolio{
   border-left: 1.5rem solid var(--light-grey-color);
   padding: var(--content-top-padding-size) 0 0 0;
-
+  min-height: 100vh;
 
 
   @include respond(tab-land) {
