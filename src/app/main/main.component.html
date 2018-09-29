@@ -1,7 +1,1 @@
-<div [ngSwitch]="page_switch" class="main">
-  <div class="" *ngSwitchCase="'about'"><app-about @fade></app-about></div>
-  <div class="" *ngSwitchCase="'contact'"><app-contact @fade></app-contact></div>
-  <div class="" *ngSwitchCase="'home'"><app-home @fade></app-home></div>
-  <div class="" *ngSwitchCase="'portfolio'"><app-portfolio @fade></app-portfolio></div>
-  <div class="" *ngSwitchDefault><app-home @fade></app-home></div>
-</div>
+<router-outlet></router-outlet>

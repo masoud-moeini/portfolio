@@ -1,6 +1,6 @@
+import { RouterModule } from '@angular/router'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { MainComponent } from './main/main.component';
@@ -31,6 +31,13 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     RecaptchaModule.forRoot({
       siteKey: '6LebdmwUAAAAABcIWBjTmsjEhRkm6TiWhIawpBU-',
     }),
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'about', component: AboutComponent},
+      {path: 'portfolio', component: PortfolioComponent},
+      {path: 'contact', component: ContactComponent},
+      // {path: '**', component: NotFoundComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

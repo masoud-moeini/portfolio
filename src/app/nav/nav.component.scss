@@ -72,7 +72,7 @@
         cursor: pointer;
         position: relative;
 
-        &__link:link,&__link:visited {
+        &__link:hover,&__link:visited {
           color: var(--dark-grey-color-2);
           position: relative;
           z-index: 10;
